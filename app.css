@@ -1,0 +1,41 @@
+h1{
+    font-family: Bebas Neue;
+    font-size: 50px;
+    margin-left: 1.66%;
+    border-bottom: rgb(160, 160, 160) 3px solid;
+    width: 30%;
+    padding-bottom: 10px;
+    
+}
+
+.dark{
+    background-color: #121212;
+}
+
+.dark-text{
+    color: white;
+    letter-spacing: 2px;
+}
+
+.center{
+    padding-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-bottom: 50px;
+}
+
+img{
+    animation: rotateAnim 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateAnim {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
