@@ -4,7 +4,8 @@ import Hero from "../lib/components/Hero";
 
 const IndexPage = () => {
   return (
-    <div className="bg-blakc min-h-screen relative">
+    // <div>Hello</div>
+    <div className="bg-blakc min-h-screen relative w-full">
       <Header />
       <Hero />
     </div>

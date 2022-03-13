@@ -12,7 +12,7 @@ export default Header;
 
 const Logo = () => {
   return (
-    <h1 className="flex items-center space-x-1 text-2xl">
+    <h1 className="flex items-center space-x-1 text-xl md:text-2xl">
       <span className="text-beige">{"< "}</span>
       <span className="mb-0.5 bg-gradient-to-tr from-green-500 to-blue-500 text-transparent bg-clip-text font-semibold uppercase">
         sxrthxk
