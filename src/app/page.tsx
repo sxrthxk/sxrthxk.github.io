@@ -1,101 +1,69 @@
-import Image from "next/image";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { MdAlternateEmail } from "react-icons/md";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import Head from "next/head";
+import { Metadata } from "next";
 
+const ICON_SIZE = 36;
+
+export const metadata: Metadata = {
+  title: "Sarthak Gupta | SDE@Anq",
+};
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+    <div className="max-w-4xl mx-auto py-12 md:py-24 px-6 font-medium">
+      <Head>
+        <title>Sarthak Gupta</title>
+      </Head>
+      <div className="text-2xl opacity-70 italic ml-[2px]">Hi, I&apos;m</div>
+      <h1 className="text-5xl md:text-6xl font-extrabold text-[#9CB380] mt-1">
+        Sarthak <br />
+        Gupta
+      </h1>
+      <div className="text-md md:text-xl mt-3">
+        I’m a{" "}
+        <span className="text-[#CC2200] font-black">Software Developer</span>{" "}
+        passionate about crafting seamless digital experiences with intuitive
+        design and efficient code{" "}
+        <span className="italic font-thin">(Yes, ChatGPT)</span>.
+        <div className="mt-3">
+          With expertise in frontend frameworks, backend systems, and cloud
+          technologies, I specialize in building scalable and user-friendly
+          applications. Currently, I'm weilding the code wand at{" "}
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://anq.finance/"
+            className="text-nowrap"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            <span className="underline underline-offset-4">Anq Finance</span>
+            <FaExternalLinkAlt className="inline ml-2" />
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </div>
+      <div className="w-full mx-auto h-[0.5px] mt-3 bg-white opacity-20"></div>
+      <div className="text-md md:text-xl mt-3">
+        Connect with me through my socials below to dive into my work and
+        journey.{" "}
+        <span className="italic font-thin">(Or just have a chat?)</span>
+      </div>
+      <div className="mt-6 flex gap-4">
+        <a href="https://www.linkedin.com/in/sxrthxk/" target="_blank">
+          <FaLinkedinIn
+            size={ICON_SIZE}
+            className="hover:scale-125 duration-150"
           />
-          Learn
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+        <a href="https://github.com/sxrthxk" target="_blank">
+          <FaGithub size={ICON_SIZE} className="hover:scale-125 duration-150" />
+        </a>
+        <a href="mailto:sarthak.ag2001@gmail.com">
+          <MdAlternateEmail
+            size={ICON_SIZE}
+            className="hover:scale-125 duration-150"
           />
-          Examples
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
