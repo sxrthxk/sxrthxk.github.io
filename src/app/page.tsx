@@ -30,7 +30,7 @@ export default function Home() {
         <div className="mt-3">
           With expertise in frontend frameworks, backend systems, and cloud
           technologies, I specialize in building scalable and user-friendly
-          applications. Currently, I'm weilding the code wand at{" "}
+          applications. Currently, I&apos;m weilding the code wand at{" "}
           <a
             href="https://anq.finance/"
             className="text-nowrap"
