@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "./src/styles/colors";
 
 export default {
   content: [
@@ -9,11 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["JetBrains Mono", 'sans-serif'],
+        sans: ["JetBrains Mono", "sans-serif"],
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        ...colors,
       },
     },
   },
