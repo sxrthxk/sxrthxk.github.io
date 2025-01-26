@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 import { MdAlternateEmail } from "react-icons/md";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import MusicEmbed from "@/components/MusicEmbed";
 
 const ICON_SIZE = 36;
 
@@ -24,8 +25,7 @@ const Hero = () => {
         programming practices. Amongst the general excitement of software
         development, I&apos;ve been embarking on my journey in the field of
         design.
-      <iframe className="roxunded-[12px] mt-3 w-full md:w-3/4" src="https://open.spotify.com/embed/track/0lzNXoZINVBLHWNIxKxWOo?utm_source=generator" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+        <MusicEmbed />
         <div className="mt-3">
           With expertise in frontend frameworks, backend systems, and cloud
           technologies, I specialize in building scalable and user-friendly
@@ -35,7 +35,9 @@ const Hero = () => {
             className="text-nowrap"
             target="_blank"
           >
-            <span className="underline underline-offset-4 text-primary">Anq Finance</span>
+            <span className="underline underline-offset-4 text-primary">
+              Anq Finance
+            </span>
             <FaExternalLinkAlt className="inline ml-2" />
           </a>
         </div>
