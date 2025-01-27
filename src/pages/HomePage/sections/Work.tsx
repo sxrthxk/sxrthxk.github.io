@@ -1,10 +1,10 @@
+import { TechStackFooter } from "@/components/TechStackFooter";
 import { workHistory } from "@/interface/constants/work";
-import Image from "next/image";
 import { TbExternalLink } from "react-icons/tb";
 
 export default function Work() {
   return (
-    <div className="mt-12 ">
+    <div className="mt-12">
       <h1 className="text-4xl font-black text-primary">Work / Experience</h1>
       <div className="w-full mx-auto h-[0.5px] my-3 bg-white opacity-20"></div>
       <ul className="list-inside">
@@ -42,20 +42,7 @@ export default function Work() {
             </ul>
             <div className="w-full mx-auto h-[0.5px] my-3 bg-white opacity-20"></div>
             Stack:
-            <ul className="flex flex-wrap gap-4 mt-2">
-              {work.techStack.map((tech, index) => (
-                <li key={index} className="text-white text-sm font-medium">
-                  <Image
-                    src={tech.logo}
-                    className="inline mr-2"
-                    alt={tech.name}
-                    width={40}
-                    height={40}
-                  />
-                  {/* <span className="opacity-50">{tech.name}</span> */}
-                </li>
-              ))}
-            </ul>
+            <TechStackFooter techStack={work.techStack} />
           </li>
         ))}
       </ul>

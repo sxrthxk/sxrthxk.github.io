@@ -87,3 +87,5 @@ export const workHistory = [
     ],
   },
 ];
+
+export type WorkI = typeof workHistory[number];

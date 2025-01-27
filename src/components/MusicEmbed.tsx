@@ -8,12 +8,10 @@ export default function MusicEmbed() {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
-    // this forces a rerender
     setHydrated(true);
   }, []);
 
   if (!hydrated) {
-    // this returns null on first render, so the client and server match
     return null;
   }
   return (

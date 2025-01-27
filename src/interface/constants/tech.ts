@@ -18,4 +18,32 @@ export const Tech = {
   Python: { name: "Python", logo: Logos.PythonSVG },
   PGSQL: { name: "PostgreSQL", logo: Logos.PGSQLSVG },
   Redux: { name: "Redux", logo: Logos.ReduxSVG },
+  Docker: { name: "Docker", logo: Logos.DockerSVG },
+  Mongo: { name: "MongoDB", logo: Logos.MongoSVG },
+  CICD: { name: "CI/CD" },
+  Azure: { name: "Azure" },
 };
+
+export const currentStack = [
+  Tech.React,
+  Tech.TypeScript,
+  Tech.NodeJS,
+  Tech.NextJS,
+  Tech.Mongo,
+  Tech.Docker,
+  Tech.DenoJS,
+  Tech.TailwindCSS,
+  Tech.PGSQL,
+  Tech.Redux,
+];
+
+export const familiarStack = [
+  Tech.Clojure,
+  Tech.Datomic,
+  Tech.GoogleCloud,
+  Tech.Flask,
+  Tech.Nginx,
+  Tech.Python,
+  Tech.Azure,
+  Tech.CICD
+];
