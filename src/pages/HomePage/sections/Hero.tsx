@@ -1,12 +1,10 @@
 import React from "react";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa6";
-import { MdAlternateEmail } from "react-icons/md";
+
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import MusicEmbed from "@/components/MusicEmbed";
+import Contacts from "@/components/Contacts";
 
-const ICON_SIZE = 36;
 
 const Hero = () => {
   return (
@@ -45,28 +43,14 @@ const Hero = () => {
       <div className="w-full mx-auto h-[0.5px] mt-3 bg-white opacity-20"></div>
       <div className="text-md md:text-xl mt-3">
         Connect with me through my socials below, view my{" "}
-        <a className="underline underline-offset-2" href="">
+        <a className="underline underline-offset-2" target="_blank" href="/Sarthak_Gupta_Resume.pdf">
           resume
           <FiExternalLink className="inline ml-1 w-5 h-5" />
         </a>{" "}
         or dive into my work and journey below.{" "}
       </div>
       <div className="mt-6 flex gap-4">
-        <a href="https://www.linkedin.com/in/sxrthxk/" target="_blank">
-          <FaLinkedinIn
-            size={ICON_SIZE}
-            className="hover:scale-125 duration-150"
-          />
-        </a>
-        <a href="https://github.com/sxrthxk" target="_blank">
-          <FaGithub size={ICON_SIZE} className="hover:scale-125 duration-150" />
-        </a>
-        <a href="mailto:sarthak.ag2001@gmail.com">
-          <MdAlternateEmail
-            size={ICON_SIZE}
-            className="hover:scale-125 duration-150"
-          />
-        </a>
+        <Contacts />
       </div>
     </>
   );

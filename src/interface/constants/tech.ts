@@ -22,6 +22,7 @@ export const Tech = {
   Mongo: { name: "MongoDB", logo: Logos.MongoSVG },
   CICD: { name: "CI/CD" },
   Azure: { name: "Azure" },
+  Laravel: { name: "PHP/Laravel" },
 };
 
 export const currentStack = [
@@ -45,5 +46,6 @@ export const familiarStack = [
   Tech.Nginx,
   Tech.Python,
   Tech.Azure,
-  Tech.CICD
+  Tech.CICD,
+  Tech.Laravel
 ];
