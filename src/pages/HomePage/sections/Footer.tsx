@@ -8,9 +8,6 @@ export default function Footer() {
       <footer className=" text-white pb-12">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <h4 className="font-bold mb-2 underline underline-offset-2">
-              Contacts:
-            </h4>
             <div className="flex gap-4 my-4">
               <Contacts />
             </div>
