@@ -4,7 +4,7 @@ export const workHistory = [
   {
     title: "ANQ Digital Finserv",
     role: "Software Development Engineer",
-    startDate: "Jul 2023",
+    startDate: "Feb 2023",
     endDate: "Present",
     link: "https://anq.finance",
     description: [
@@ -27,7 +27,7 @@ export const workHistory = [
     title: "ANQ Digital Finserv",
     role: "Technology Intern",
     startDate: "Jun 2022",
-    endDate: "Jul 2023",
+    endDate: "Jan 2023",
     link: "https://anq.finance",
     description: [
       "Built a React Native app with solid user adoption.",
